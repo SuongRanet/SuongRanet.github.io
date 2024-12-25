@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  color: #edf0f1;
+}
+::selection {
+  background-color: rgba(255, 217, 0, 0.344);
+}
+.container-fluid {
+  background-color: rgb(48, 48, 48);
+}
+.ul-phone {
+    display: none ;
+}
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 9px;
+  & li {
+    padding: 0px 7px;
+  }
+}
+ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  color: #edf0f1;
+  transition: all 0.3s;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+li a:hover {
+  color: gold;
+}
+ul li ul.dropdown li {
+  display: block;
+  margin-top: 5px;
+}
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding: 4px 4px;
+  background-color: rgb(113, 113, 113);
+  border-radius: 10px;
+}
+ul li:hover ul.dropdown {
+  display: block;
+  right: -19px;
+}
+.header {
+  text-align: center;
+  font-size: 16;
+}
+.highlight {
+  color: gold; /* Replace 'red' with your desired color */
+}
+.gree {
+  & .box {
+    gap: 0.5%;
+    display: flex;
+    gap: 4px;
+    height: 130px;
+    margin-bottom: 10px;
+  } .img {
+    width: 40%;
+  }
+  & .info {
+    text-align: center;
+    position: relative;
+    width: 60%;
+    & .pet {
+        display: none;
+    }
+  } 
+  & p {
+    text-align: start;
+    font-size: 13px;
+  }
+  & a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(130, 130, 130, 0.718);
+    border-radius: 5px;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    color: #edf0f1;
+    transition: all 0.3s;
+    text-align: center;
+    margin-bottom: 4px;
+  } & a:hover {
+    color: gold;
+  }
+}
+.img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 3%;
+}
+.logo {
+  height: 35px;
+  width: 35px;
+  margin-top: 5px;
+}
+.thank {
+    height: 90px;
+    background-color: rgba(249, 249, 127, 0.495);
+} & h5 {
+    text-align: center;
+    justify-content: center;
+}
+.fa {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .gree {
+        & .box {
+          gap: 0.5%;
+          display: flex;
+          gap: 4px;
+          height: 130px;
+          margin-bottom: 10px;
+        } .img {
+          width: 40%;
+        }
+        & .info {
+          text-align: center;
+          position: relative;
+          width: 60%;
+          & .pet {
+              display: none;
+          }
+        } 
+        & p {
+          text-align: start;
+          font-size: 14px;
+        }
+        & a {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(130, 130, 130, 0.718);
+          border-radius: 5px;
+          padding: 4px;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 17px;
+          color: #edf0f1;
+          transition: all 0.3s;
+          text-align: center;
+          margin-bottom: 4px;
+        } & a:hover {
+          color: gold;
+        }
+      }
+      .logo {
+        height: 42px;
+        width: 42px;
+        margin-top: 5px;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .ul-pc {
+      display: none;
+    }
+    .ul-phone {
+      display: block;
+    }
+    .gree {
+        & .box {
+          gap: 0.5%;
+          gap: 4px;
+          height: 400px;
+          margin-bottom: 10px;
+          flex-direction: column;
+        } .img {
+          width: 100%;
+          height: 40%;
+        }
+        & .info {
+          text-align: center;
+          position: relative;
+          width: 100%;
+          height: 60%;
+          & .pet {
+              display: block;
+          }& .pot {
+            display: none;
+          }
+        } 
+        & p {
+          text-align: start;
+          font-size: 16px;
+        }
+        & a {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(130, 130, 130, 0.718);
+          border-radius: 5px;
+          padding: 4px;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 17px;
+          color: #edf0f1;
+          transition: all 0.3s;
+          text-align: center;
+          margin-bottom: 4px;
+        } & a:hover {
+          color: gold;
+        }
+      }
+      .logo {
+        height: 69px;
+        width: 69px;
+        margin-top: 5px;
+      }
+      ul li a {
+        font-size: 15px;
+      }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    ul li a {
+        font-size: 17px;
+      }
+      .logo {
+        height: 78px;
+        width: 78px;
+        margin-top:8px;
+      }
+      .gree {
+         &p {
+        font-size: 17px;
+      }
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    ul li a {
+        font-size: 19px;
+      }
+      .logo {
+        height: 82px;
+        width: 82px;
+        margin-top:10px;
+      }
+      .gree {
+         & .box {
+            gap: 1px;
+            height: 500px;
+      }&p {
+        font-size: 18px;
+      }
+    }
+    .menu-bar {
+        padding: 20px 20px;
+        & li {
+          padding: 0px 20px;
+        }
+      }
+      ul li ul.dropdown {
+        padding: 5px 9px;
+      }
+
+    }
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
+}
